@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "3ec0f1a613c8f63a",
+    "type": "split",
+    "children": [
+      {
+        "id": "01b36d104719858a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c805dfd7d291ce4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TdW/TdW Formula Sheet/TdW Formula Sheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "17bc14d274cda0b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "98db5dce59bd3b98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c2c79e72b3935f3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "756c46f8f0d1f8a4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "30e6ef10beb91750",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "76b32eb7c36aa54a",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6a13ffe182a6a37",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7612ee5ac5a3ca72",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TdW/TdW Formula Sheet/TdW Formula Sheet.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "140ecba3c356a72d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "TdW/TdW Formula Sheet/TdW Formula Sheet.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "25b260cb1abb74af",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fe1782269da708dc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TdW/TdW Formula Sheet/TdW Formula Sheet.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "flashcards-obsidian:Generate flashcards": false
+    }
+  },
+  "active": "c805dfd7d291ce4d",
+  "lastOpenFiles": [
+    "TdW/TdW Formula Sheet/figs/Pasted image 20230625232824.png",
+    "TdW/TdW Formula Sheet/TdW Formula Sheet.md",
+    "TdW/TdW Formula Sheet/tdw-formelsammlung.pdf",
+    "TdW/TdW Formula Sheet/figs/tdw-formelsammlung.pdf",
+    "TdW/TdW Formula Sheet/readme.md",
+    "TdW/TdW Formula Sheet.md",
+    "TdW/TdW Formula Sheet/figs/TdW Formula Sheet.md",
+    "TdW/TdW Formula Sheet/figs/PXL_20230530_101727249.jpg",
+    "TdW/TdW Formula Sheet/figs/Pasted image 20230625224748.png",
+    "TdW/TdW Formula Sheet/figs/Pasted image 20230624142925.png",
+    "TdW/TdW Formula Sheet/figs/Pasted image 20230624142913.png",
+    "TdW/TdW Formula Sheet/figs/Pasted image 20230624141804.png",
+    "TdW/TdW Formula Sheet/figs/Pasted image 20230624140442.png",
+    "TdW/TdW Formula Sheet/figs/Pasted image 20230624140430.png",
+    "TdW/TdW Formula Sheet/figs/Pasted image 20230624135740.png",
+    "TdW/TdW Formula Sheet/figs/Pasted image 20230623100444.png",
+    "TdW/TdW Formula Sheet/figs",
+    "TdW/TdW Formula Sheet",
+    "TdW/readme.md",
+    "Wifi.md",
+    "TdW/Fragen.md",
+    "orphaned files output.md",
+    "IPT/matches/Data/morıtz-vert2_22.wav",
+    "TdW/code/Manifest.toml",
+    "TdW/code/Project.toml",
+    "TdW/code/stirling.jl",
+    "TdW/code",
+    "QM/QM Fragen.md",
+    "Chat GPT.md",
+    "TdW/TdW.typ",
+    "QM/Exam Information.md",
+    "QM/Singlets Triplets.md",
+    "QM/Spin.md",
+    "QM/Untitled.md",
+    "Exercise session.md",
+    "Fermi Gas model.md",
+    "Formulas.md",
+    "KTP/Additional Notes Cheat Sheet.md",
+    "KTP/Questions.md",
+    "Question Entropy.md",
+    "P3/Carbon Dating.md",
+    "KTP/Lecture 26.md",
+    "Gesamtheiten.md",
+    "KTP/Magic Numbers.md",
+    "SMDAP Frage.md",
+    "IPT/presentation/Untitled.canvas"
+  ]
+}

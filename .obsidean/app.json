@@ -1,0 +1,21 @@
+{
+  "showUnsupportedFiles": false,
+  "useMarkdownLinks": true,
+  "userIgnoreFilters": [
+    "*.jpg",
+    "*.png"
+  ],
+  "attachmentFolderPath": "./figs",
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "spellcheckLanguages": [
+    "en-US",
+    "de-DE"
+  ]
+}
