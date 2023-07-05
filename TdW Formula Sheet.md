@@ -17,6 +17,24 @@ $$
 $$
 S_i\left(T_i, V_i\right)-S_i\left(T_i^{\mathrm{ref}}, V_i^{\mathrm{ref}}\right)=N_i C_V \log \left(T_i / T_i^{\mathrm{ref}}\right)+N_i R \log \left(V_i / V_i^{\mathrm{ref}}\right)
 $$
+unabhängig vom Prozess gilt:
+$$
+\left(\frac{\partial U}{\partial T}\right)_V=c_V=\text { const } \qquad \left(\frac{\partial U}{\partial V}\right)_T=0
+$$
+### Adiabatischer Prozess
+$T V^{\gamma-1}=$ const., $p V^\gamma=$ const. und $T^\gamma p^{1-\gamma}=$ const. wobei $\gamma:=\frac{n R}{C_V}+1$
+## Van der Waals Gas
+$$
+\left(p+\frac{a}{V^2}\right)(V-b)=R T
+$$
+wobei $a, b>0$ und $R$ wieder die ideale Gaskonstante ist. Erfüllt nicht die Stabilitätsbedingungen der Freien Energie $F(V,T,N)$. 
+### Kritischer Punkt
+$$\left.\frac{\partial p}{\partial V}\right|_T=0=-\frac{R T}{(V-b)^2}+\frac{2 a}{V^3},\left.\quad \frac{\partial^2 p}{\partial V^2}\right|_T=0=\frac{2 R T}{(V-b)^3}-\frac{6 a}{V^4}$$
+### Parameterunabhängige Form
+$$
+\left(\tilde{p}+\frac{3}{\tilde{V}^2}\right)(3 \tilde{V}-1)=8 \tilde{T}
+$$
+mit$\tilde{T}:=\frac{T}{T_0}$, $\tilde{V}:=\frac{V}{V_0}$ und $\tilde{p}:=\frac{p}{p_0}$.
 ## Absolute Temperatur
 Die absolute Temperatur eines Reservoirs $R$ ist definiert als
 $$
@@ -191,12 +209,31 @@ $$
 S \mathrm{~d} T-V \mathrm{~d} p+N \mathrm{~d} \mu=0 .
 $$
 Insbesondere sind nur zwei der drei Zustandsgrössen $T, p$ und $\mu$ unabhängig.
+## Kreisprozesse
+### Efficiency 
+$$\eta:=\frac{\left|W_S\left(p_{\text {cycle }}\right)\right|}{Q_S\left(p_{\text {heat }}\right)} = \frac{\text{Arbeit die raus geht}}{\text{Wärme, die rein geht beim heizen}} =\frac{W}{Q_1}=\frac{Q_1-Q_2}{Q_1}=1-\frac{Q_2}{Q_1}$$
 
-## Van der Waals Gas
-- [ ] To Do
-
+### Carnot Prozess Ideales Gas
+![](Pasted%20image%2020230630185901.png)
+![](Pasted%20image%2020230630185913.png)
+#### Carnot Efficiency
+$$\eta_{\mathrm{C}}=1-\frac{T_2}{T_1}$$
 ## Mischungen
 - [ ] To Do
+
+### Ideale Mischungen
+$\Delta U=0$ 
+
+### Verdünnte Mischungen
+Hypotetisches System mit $\tilde{U}=\sum_{i=1}^r N_i \tilde{u}_i, \quad \tilde{V}=\sum_{i=1}^r N_i \tilde{v}_i$
+**GIbbsche Energie**
+$$
+\begin{aligned}
+\tilde{G}\left(T, p, N_1, . ., N_r\right) & =\tilde{U}-T \tilde{S}+p \tilde{V}=\sum_{i=1}^r N_i \tilde{u}_i-T N_i \tilde{s}_i^0+T R N_i \log \frac{N_i}{N}+p N_i \tilde{v}_i \\
+& =\sum_{i=1}^r N_i \tilde{\mu}_i^0(T, p)+R T N_i \log \frac{N_i}{N}
+\end{aligned}
+$$
+mit $\tilde{\mu}_i^0(T, p):=\tilde{u}_i(T, p)-T \tilde{s}_i^0(T, p)+p \tilde{v}_i(T, p)$
 
 ## Beispiele Thermodynamischer Systeme
 ### Diathermische Wand
@@ -220,6 +257,7 @@ $$
 $$
 ## Ensembles/Gesamtheiten
 ![](PXL_20230530_101727249.jpg)
+
 ### Mikrokanonisches Ensemble
 $V,N,E$ konstant
 #### Zustand:
