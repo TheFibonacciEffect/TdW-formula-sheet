@@ -1,3 +1,12 @@
+# ToDo
+- [ ] Henry Gesetz
+- [ ] chemisches potential $\mu = \mu^{0}+RT\log c$, konzentration $c$
+- [ ] stöchiometirischer Koeffizient $$
+\left. \frac{ \partial \mu }{ \partial p } \right|_{t} = \mu
+$$
+- [ ] gleichgewichtsbedingung $$
+v_{1}\mu_{1}+v_{2}\mu_{2}=0
+$$
 # Thermodynamik
 ## 1. HS
 $$
@@ -23,6 +32,11 @@ $$
 $$
 ### Adiabatischer Prozess
 $T V^{\gamma-1}=$ const., $p V^\gamma=$ const. und $T^\gamma p^{1-\gamma}=$ const. wobei $\gamma:=\frac{n R}{C_V}+1$
+### Chemisches Potential
+$$
+\mu_i\left(T, p, N_1, \ldots, N_r\right)=\mu_i^0(T, p)+R T \log c_i
+$$
+mit $\frac{p_i}{p}=\frac{N_i}{N}=c_i$
 ## Van der Waals Gas
 $$
 \left(p+\frac{a}{V^2}\right)(V-b)=R T
@@ -98,7 +112,7 @@ $$
 $$
 U=F+T S
 $$
-#### Freie Helmholz Energie
+## Freie Helmholz Energie
 
 $$
 \begin{aligned}
@@ -116,7 +130,7 @@ $$
 \end{aligned}
 $$
 
-### Entalpie
+## Entalpie
 $$
 \begin{aligned}
 H(S, p, N) & =-U^{*(V \rightarrow-p)}(S, p, N) \\
@@ -125,13 +139,11 @@ H(S, p, N) & =-U^{*(V \rightarrow-p)}(S, p, N) \\
 & =T S+\mu N,
 \end{aligned}
 $$
-
-
 $$
 \mathrm{d} H=\mathrm{d} U+p \mathrm{~d} V+V \mathrm{~d} p=T \mathrm{~d} S+V \mathrm{~d} p+\mu \mathrm{d} N
 $$
 
-### Gibbsche Freie energie
+## Gibbsche Freie energie
 $$
 \begin{aligned}
 G(T, p, N) & =-U^{*(V \rightarrow-p, S \rightarrow T)}(T, p, N) \\
@@ -196,7 +208,11 @@ $$
 \left.\frac{\partial p}{\partial T} \equiv \frac{\partial p}{\partial T}\right|_{V, N}=\left.\frac{\partial S}{\partial V}\right|_{T, N}=\frac{S_2-S_1}{V_2-V_1}=\frac{L_{12}}{T\left(V_2-V_1\right)}
 $$
 mit $L_{12}$ der latenten wärme zwischen zustand 1 und 2 (verdampfungswärme, schmelzwärme)
-## Gibbs Phasenregel
+## Phasen
+### Phasenübergang $n$-ter ordnung
+**Ehrenfest Klassifikation** Bei einem Phasenübergang $n$-ter Ordnung ist $G$ als Funktion von $T$ und $p$ in seinen ersten $n-1$ Ableitungen stetig, die $n$-te Ableitung ist unstetig. Lässt sich nicht für Phasenübergänge verwenden, bei denen eine Ableitung von $G$ divergiert.
+Phasenübergang 1. Ordnung involviert generell latente Wärmen, d.h. es wird Energie vom System aufgenommen oder abgegeben, ohne dass dies eine Temperaturänderung zur Folge hat. zB. kochendes Wasser. Alle anderen Phasenübergänge sind zweiter oder höherer Ordnung.
+### Gibbs Phasenregel
 Für die einfachsten thermodynamischen Systeme lautet die Phasenregel:
 $$
 f=K-P+2
@@ -204,6 +220,11 @@ $$
 $f$ : Anzahl der Freiheitsgrade des Systems
 $K$ : Anzahl der unabhängigen Substanzen im System
 $P:$ Anzahl der Phasen im System
+### Übergangswärme
+**molare** Übergangswärme, von flüssiger $l$ to faster $s$ phase
+$$
+\lambda=h_{l}^0(T)-h_{s}^0(T)
+$$
 ## Gibbs Duhem Relation
 $$
 S \mathrm{~d} T-V \mathrm{~d} p+N \mathrm{~d} \mu=0 .
@@ -219,11 +240,13 @@ $$\eta:=\frac{\left|W_S\left(p_{\text {cycle }}\right)\right|}{Q_S\left(p_{\text
 #### Carnot Efficiency
 $$\eta_{\mathrm{C}}=1-\frac{T_2}{T_1}$$
 ## Mischungen
-- [ ] To Do
 
 ### Ideale Mischungen
 $\Delta U=0$ 
-
+Dampfdruckerniedrigung (bei gleichbleibender Temperatur $\Delta T=0$): Raoultsches Gesetz
+$$
+\Delta p=-\frac{R T c_2}{\bar{v}_1-v_1}
+$$
 ### Verdünnte Mischungen
 Hypotetisches System mit $\tilde{U}=\sum_{i=1}^r N_i \tilde{u}_i, \quad \tilde{V}=\sum_{i=1}^r N_i \tilde{v}_i$
 **GIbbsche Energie**
@@ -234,15 +257,32 @@ $$
 \end{aligned}
 $$
 mit $\tilde{\mu}_i^0(T, p):=\tilde{u}_i(T, p)-T \tilde{s}_i^0(T, p)+p \tilde{v}_i(T, p)$
+dilute-mixture assumption: $n_{\mathrm{H}_2 \mathrm{O}}^{\text {liq }} \approx n^{\text {liq }}$
 
-## Beispiele Thermodynamischer Systeme
-### Diathermische Wand
-![](Pasted%20image%2020230624135740.png)
-### Bewegliche Adiabatische Wand
-![](Pasted%20image%2020230624140430.png)
-![](Pasted%20image%2020230624140442.png)
+### Mischungen Idealer Gase
+$$
+G_i\left(T, p_i, N_i\right)= G_i\left(T, p, N_i\right)+N_i R T \log \left(\frac{N_i}{N}\right)
+$$
+$$
+G\left(T, p, N_1, \ldots, N_r\right)= =\sum_{i=1}^r G_i\left(T, p, N_i\right)+N_i R T \log \left(\frac{N_i}{N}\right)
+$$
+$$
+\mu_i\left(T, p, N_1, \ldots, N_r\right)=\mu_i^0(T, p)+R T \log c_i
+$$
+$$
+S\left(T, p, N_1, \ldots, N_r\right)=-\left.\frac{\partial G}{\partial T}\right|_{p, N_i}=\sum_{i=1}^r S_i\left(T, p, N_i\right)\underbrace{ -R \sum_{i=1}^r N_i \log \frac{N_i}{N}U }_{ \text{mischentropie, }  > 0}
+$$
 
-## Chemische Reaktionen
+### Chemische Gleichgewichte
+### Gleichgewichtsbedingungen
+$$
+\sum_{i=1}^r \nu_i^k \mu_i=0, \quad(k=1, \ldots, s) .
+$$
+mit der Wahl $\mathrm{d} \lambda^k=1$ und $\mathrm{d} \lambda^j=0$ für $j \neq k$
+### Umsatz $\lambda$
+$$
+\mathrm{d} N_i=\sum_{k=1}^s \nu_i^k \mathrm{~d} \lambda^k
+$$
 ### Gleichgewichtskonstante
 $$
 \begin{aligned}
@@ -250,6 +290,29 @@ K(T, p) & =\exp \left(-\sum \nu_i g_i /(R T)\right) \\
 & =\exp \left(-\left(2 g_1+1 g_2-2 g_3\right) /(R T)\right)
 \end{aligned}
 $$
+### Massenwirkungsgesetz
+$$
+\prod_{i=1}^r c_i^{\nu_i}=e^{-\frac{1}{R T} \sum_i \nu_i \mu_i^0(T, p)}=: K(T, p) .
+$$
+*Massenwirkungskonstante* $K(t,p)$
+$$
+\implies \begin{align}
+\sum_{i \in E, P} v_{i}\log \frac{N_{i}}{N}=\text{const}
+\end{align}
+$$
+mit $N_{i} = N_{i}^{0}+v_{i}\lambda$, $N=\sum N_{i}$
+### Stöchiometrische Gerade
+$$
+N_i=N_i^0+\sum_{k=1}^s \nu_i^k \lambda^k
+$$
+## Beispiele Thermodynamischer Systeme
+### Diathermische Wand
+![](Pasted%20image%2020230624135740.png)
+### Bewegliche Adiabatische Wand
+![](Pasted%20image%2020230624140430.png)
+![](Pasted%20image%2020230624140442.png)
+
+
 # Statistische Mechanik
 ## Gleichverteilungssatz
 $$
@@ -388,6 +451,17 @@ $$
 $K$ kästchen mit $N=\sum_{i=1}^K n_i$ teilchen gibt $N ! / \prod_i n_{i} !$ möglichkeiten. Entropie ist deshalb
 $$
 S=k_B \log N !-k_B \sum_i \log \left(n_{i} !\right)
+$$
+## Bolzmann Gleichung (Kräftefrei)
+$$
+n=\int d^3 v f_0(\vec{v}), \quad n \vec{v}_0=\int d^3 v \vec{v} f_0(\vec{v}), \quad n \cdot \frac{3}{2} k T=\int d^3 v m \frac{\left(\vec{v}-\vec{v}_0\right)^2}{2} f_0(\vec{v})
+$$
+## Maxwell-Bolzmann Distribution
+$$
+f_0(\vec{v})=n\left(\frac{m}{2 \pi k T}\right)^{3 / 2} e^{-\frac{m}{2 k T}\left(\vec{v}-\vec{v}_0\right)^2}
+$$
+$$
+n=\int d^3 v f_0(\vec{v}), \quad n \vec{v}_0=\int d^3 v \vec{v} f_0(\vec{v}), \quad n \cdot \frac{3}{2} k T=\int d^3 v m \frac{\left(\vec{v}-\vec{v}_0\right)^2}{2} f_0(\vec{v})
 $$
 # Mathematik
 ## Satz von Gauss
